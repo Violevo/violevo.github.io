@@ -34,7 +34,7 @@ function showContent(index) {
     <div class="home-image07">
       <img
         alt="image"
-        src="public/SectionImages/fff.png"
+        src="public/SectionImages/PKr2oU1Q32.jpg"
         class="watch-image"
       />`,
 
@@ -58,7 +58,7 @@ function showContent(index) {
     <div class="home-image07">
       <img
         alt="image"
-        src="public/SectionImages/_PKr2oU1Q32.jpg"
+        src="public/SectionImages/watch.jpg"
         class="watch-image"
       />`,
 
