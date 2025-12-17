@@ -1,0 +1,53 @@
+:root{
+	--hub-bg:#0f1724;
+	--hub-card:#0b1220;
+	--hub-accent:#7c5cff;
+	--hub-muted:#9aa4b2;
+	--hub-white:#e6eef8;
+	--hub-radius:12px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+	margin:0;
+	font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	background:linear-gradient(180deg,var(--hub-bg),#08101a);
+	color:var(--hub-white);
+	-webkit-font-smoothing:antialiased;
+}
+
+.hub-container{
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:48px 20px;
+}
+
+.hub-header{max-width:980px;text-align:center;margin-bottom:28px}
+.hub-title{font-size:28px;margin:0 0 6px;font-weight:600}
+.hub-subtitle{margin:0;color:var(--hub-muted)}
+
+.hub-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;width:100%;max-width:980px;margin-top:18px}
+
+.hub-card{display:flex;align-items:center;gap:16px;padding:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.06));border-radius:var(--hub-radius);text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.03);transition:transform .18s ease,box-shadow .18s ease;}
+.hub-card:focus{outline:3px solid rgba(124,92,255,0.18);outline-offset:4px}
+.hub-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+
+.hub-card-media{width:64px;height:64px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:30px;background:linear-gradient(180deg,rgba(124,92,255,0.12),rgba(124,92,255,0.06));}
+.hub-card-body{flex:1;min-width:0}
+.hub-card-title{font-size:16px;margin:0 0 6px;font-weight:600}
+.hub-card-desc{margin:0;color:var(--hub-muted);font-size:13px}
+.hub-card-cta{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.04);color:var(--hub-accent);font-weight:600;font-size:13px}
+
+.hub-footer{margin-top:40px;color:var(--hub-muted);font-size:13px}
+
+@media (max-width:420px){
+	.hub-container{padding:28px 14px}
+	.hub-card{padding:14px}
+	.hub-card-media{width:52px;height:52px;font-size:24px}
+}
+
+/* Keep selectors namespaced to avoid colliding with project styles */
+
