@@ -3,30 +3,118 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Violevo — Projects</title>
+    <title>Violevo Projects</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="hub-background" aria-hidden="true">
+        <span class="hub-orbit hub-orbit-one"></span>
+        <span class="hub-orbit hub-orbit-two"></span>
+    </div>
+
     <main class="hub-container">
         <header class="hub-header">
-            <h1 class="hub-title">Violevo — Projects</h1>
-            <p class="hub-subtitle">A curated list of my public projects. Click a card to open the project.</p>
+            <div class="hub-eyebrow">
+                <a class="hub-home-link" href="https://violevo.github.io/">Home</a>
+                <span aria-hidden="true">/</span>
+                <span>Project Hub</span>
+            </div>
+            <h1 class="hub-title">Live Projects</h1>
+            <p class="hub-subtitle">Modern tools, quick demos, and clean builds. Click a card to explore.</p>
         </header>
 
         <section class="hub-grid" aria-label="Projects">
-            <a class="hub-card" href="https://violevo.github.io/projects/fortnite-drop-calculator" target="_self" data-project="Fortnite Drop Calculator">
-                <div class="hub-card-media" aria-hidden="true">🗺️</div>
-                <div class="hub-card-body">
+            <article class="hub-card hub-card-featured" data-project="Fortnite Drop Calculator">
+                <div class="hub-card-top">
+                    <div>
+                    <div class="hub-card-kicker">
+                        <span class="hub-live-dot" aria-hidden="true"></span>
+                        Live
+                    </div>
                     <h2 class="hub-card-title">Fortnite Drop Calculator</h2>
-                    <p class="hub-card-desc">Map-based drop & glide calculator — open the tool.</p>
                 </div>
-                <span class="hub-card-cta">Open</span>
-            </a>
+                <a class="hub-icon-link" href="https://github.com/violevo/fortnite-drop-calculator" target="_blank" rel="noreferrer" aria-label="GitHub: Fortnite Drop Calculator">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.55 2.87 8.41 6.85 9.78.5.1.68-.23.68-.5 0-.25-.01-.91-.01-1.78-2.78.62-3.36-1.38-3.36-1.38-.45-1.2-1.1-1.52-1.1-1.52-.9-.64.07-.63.07-.63 1 .07 1.52 1.06 1.52 1.06.89 1.57 2.34 1.12 2.9.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.05 1.03-2.78-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.04.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.91-1.32 2.75-1.04 2.75-1.04.55 1.42.2 2.47.1 2.73.64.73 1.03 1.65 1.03 2.78 0 3.98-2.34 4.85-4.57 5.1.36.32.69.94.69 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5 3.97-1.37 6.84-5.23 6.84-9.78C22 6.58 17.52 2 12 2z" />
+                            </svg>
+                </a>
+            </div>
+            <div class="hub-card-main">
+                <div class="hub-preview-image" aria-label="Preview of Fortnite Drop Calculator">
+                    <img src="assets/map_preview.png" alt="Fortnite Drop Calculator map preview">
+                </div>
+                <div class="hub-card-body">
+                    <p class="hub-card-subtitle">Free & Open Source Fortnite Drop & Glider Redeploy Position Calculator.</p>
+                    <p class="hub-card-desc">
+                        Calculates optimal jump & glider deploy points on the Fortnite map using a simple time-to-land optimization model, with real parameters imported from the game. 
+                        Features a fully interactive map, complete with zooming and panning, plus draggable map elements and real-time drop updates (courtesy of <a class="hub-inline-link" href="https://leafletjs.com/" target="_blank" rel="noreferrer">Leaflet.js</a>), 
+                        along with an auto-updating map image provided by <a class="hub-inline-link" href="https://fortnite-api.com/" target="_blank" rel="noreferrer">fortnite-api.com</a>.</p>
+                    <p class="hub-card-desc">
+                        Note: Terrain elevation and structures are not currently accounted for, which may reduce accuracy in areas with extreme elevation changes. </p>           
+                    <div class="hub-card-links">
+                        <a class="hub-link" href="https://violevo.github.io/projects/fortnite-drop-calculator" target="_self">Try it out</a>
+                        <a class="hub-read-more" href="fortnite-drop-calculator.pdf" target="_self">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+            <article class="hub-card hub-card-muted" data-project="Next Project">
+                <div class="hub-card-top">
+                    <div>
+                    <div class="hub-card-kicker">Coming Soon</div>
+                    <h2 class="hub-card-title">Next Project</h2>
+                </div>
+                <span class="hub-icon-link is-disabled" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.55 2.87 8.41 6.85 9.78.5.1.68-.23.68-.5 0-.25-.01-.91-.01-1.78-2.78.62-3.36-1.38-3.36-1.38-.45-1.2-1.1-1.52-1.1-1.52-.9-.64.07-.63.07-.63 1 .07 1.52 1.06 1.52 1.06.89 1.57 2.34 1.12 2.9.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.05 1.03-2.78-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.04.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.91-1.32 2.75-1.04 2.75-1.04.55 1.42.2 2.47.1 2.73.64.73 1.03 1.65 1.03 2.78 0 3.98-2.34 4.85-4.57 5.1.36.32.69.94.69 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5 3.97-1.37 6.84-5.23 6.84-9.78C22 6.58 17.52 2 12 2z" />
+                            </svg>
+                </span>
+            </div>
+            <div class="hub-card-main">
+                <div class="hub-preview-image hub-preview-placeholder" aria-label="Preview image placeholder">
+                    <span>Preview image</span>
+                </div>
+                <div class="hub-card-body">
+                    <p class="hub-card-desc">Add your next build here with a clean preview, description, and GitHub link.</p>
+                    <div class="hub-card-links">
+                        <span class="hub-link is-disabled">Try it out</span>
+                        <span class="hub-read-more is-disabled">Read more</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+            <article class="hub-card hub-card-muted" data-project="Another Project">
+                <div class="hub-card-top">
+                    <div>
+                    <div class="hub-card-kicker">Coming Soon</div>
+                    <h2 class="hub-card-title">Another Project</h2>
+                </div>
+                <span class="hub-icon-link is-disabled" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.55 2.87 8.41 6.85 9.78.5.1.68-.23.68-.5 0-.25-.01-.91-.01-1.78-2.78.62-3.36-1.38-3.36-1.38-.45-1.2-1.1-1.52-1.1-1.52-.9-.64.07-.63.07-.63 1 .07 1.52 1.06 1.52 1.06.89 1.57 2.34 1.12 2.9.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.05 1.03-2.78-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.04.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.91-1.32 2.75-1.04 2.75-1.04.55 1.42.2 2.47.1 2.73.64.73 1.03 1.65 1.03 2.78 0 3.98-2.34 4.85-4.57 5.1.36.32.69.94.69 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.5 3.97-1.37 6.84-5.23 6.84-9.78C22 6.58 17.52 2 12 2z" />
+                            </svg>
+                </span>
+            </div>
+            <div class="hub-card-main">
+                <div class="hub-preview-image hub-preview-placeholder" aria-label="Preview image placeholder">
+                    <span>Preview image</span>
+                </div>
+                <div class="hub-card-body">
+                    <p class="hub-card-desc">Reserve this space for the next launch. Drop in a screenshot and links.</p>
+                    <div class="hub-card-links">
+                        <span class="hub-link is-disabled">Try it out</span>
+                        <span class="hub-read-more is-disabled">Read more</span>
+                    </div>
+                </div>
+            </div>
+        </article>
         </section>
 
-        <footer class="hub-footer">Built by Violevo — hosted on GitHub Pages</footer>
+        <footer class="hub-footer">Built by Violevo - hosted on GitHub Pages</footer>
     </main>
 
     <script src="script.js"></script>
