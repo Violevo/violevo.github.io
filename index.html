@@ -3,23 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Violevo — Homepage</title>
+    <title>Violevo Homepage</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="hub-background" aria-hidden="true">
+        <span class="hub-orbit hub-orbit-one"></span>
+        <span class="hub-orbit hub-orbit-two"></span>
+    </div>
+
     <main class="hub-container">
         <header class="hub-header">
-            <h1 class="hub-title">Violevo — Homepage</h1>
-            <p class="hub-subtitle">Starter</p>
+            <div class="hub-eyebrow">
+                <a class="hub-home-link" href="https://violevo.github.io/">Home</a>
+                <span aria-hidden="true">/</span>
+            </div>
+            <h1 class="hub-title">Violevo</h1>
+            <p class="hub-subtitle">A clean, modern space for experiments, builds, and interactive tools.</p>
+            <div class="home-actions">
+                <a class="hub-link hub-link-ghost" href="https://violevo.github.io/projects">Go to projects</a>
+            </div>
         </header>
 
-        <div class="hub-links">
-            <a href="https://violevo.github.io/projects">View Projects</a>
-        </div>
-
-        <footer class="hub-footer">Built by Violevo — hosted on GitHub Pages</footer>
+        <footer class="hub-footer">Built by Violevo - hosted on GitHub Pages</footer>
     </main>
 
     <script src="script.js"></script>
